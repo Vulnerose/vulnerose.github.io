@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta charset="UTF-8">
+
+
+<!-- https://www.w3schools.com/cssref/pr_background-position.php -->
+<html>
+  <head>
+
+     <title>Meme Website</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+
+
+      body {
+            background-color: black;
+            color: limegreen;
+            background-image: url('images/CatCry.png');
+            background-repeat: repeat-y;
+            animation: falling-image 10s linear infinite;
+            }
+      @keyframes falling-image {
+        0% {
+          background-position: 0px 0px;
+        }
+        100% {
+          background-position: 0px 1000px;
+        }
+      }
+
+
+            .featured-product {
+              display: flex;
+            }
+            .featured-product div {
+              margin-right: 20px;
+            }
+
+             h1 {
+              font-family: Arial, sans-serif;
+              font-size: 32px;
+              font-weight: bold;
+              color: #333333;
+              text-transform: uppercase;
+            }
+
+    </style>
+  </head>
+  <body>
+     <h1 style="text-align: center;">Welcome to my meme website!</h1>
+    <p>Discover the wackiest meme and stuff.</p>
+
+    <div id="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li>New Meme</li>
+        <li>Throwback Meme</li>
+        <li>Random Meme</li>
+        <li>Trending Meme</li>
+        <li>Meme Wear</li>
+      </ul>
+    </div>
+
+    <div id="featured-products">
+      <h2>Featured Products</h2>
+      <div class="featured-product">
+        <div>
+          <img src="image1.jpg" alt="Featured Product 1">
+          <p>Description of Featured Product 1</p>
+        </div>
+        <div>
+          <img src="image2.jpg" alt="Featured Product 2">
+          <p>Description of Featured Product 2</p>
+        </div>
+        <div>
+          <img src="image3.jpg" alt="Featured Product 3">
+          <p>Description of Featured Product 3</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="special-offers">
+      <h2>Special Offers</h2>
+      <p>Check out our current promotions and discounts.</p>
+    </div>
+
+    <div id="contact-us">
+      <h2>Contact Us</h2>
+      <p>For any inquiries, please reach out to our customer support team.</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Email: info@example.com</p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+  </body>
+</html>

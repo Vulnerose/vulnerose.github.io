@@ -1,0 +1,16 @@
+
+/*
+
+body {
+  background: src="/images/CryCat.png" repeat-y;
+  animation: falling-image 10s linear infinite;
+}
+
+@keyframes falling-image {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 1000px;
+  }
+}
