@@ -1,0 +1,90 @@
+/* Style page for my new hub page */
+
+
+/* Color Codes
+#9FC9DF Pastel Blue
+#E1B6E7 Pastel Pink
+#4781C2 Dark Blue
+ */
+
+/* Box Model Fix */
+
+html {
+	box-sizing: border-box;
+}
+
+*,*:before, *:after {
+	box-sizing: inherit;
+}
+
+
+/* -------------------------------- */
+
+/* ClearFix */
+
+.clearfix:before
+.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+/* -------------------------------- */
+*{
+	margin: 0 !important;
+}
+
+body {
+	font-size: 2.5em;
+	text-align: justify;
+}
+
+h1 {
+	color: #9FC9DF;
+
+}
+
+a{
+	color: #9FC9DF;
+	text-decoration: none ;
+}
+
+a:hover {
+	color: red;
+	transition: 1s;
+}
+
+img#overlay {
+	width: 100%;
+	opacity: 1.0;
+	position: absolute;
+	top: 380px;
+}
+
+img#bear {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	top 380px
+	z-index: 3;
+}
+/*
+img#overlay:hover{
+	opacity: 0.1;
+	transition: 3s;
+}
+*/
+#Jumbotron {
+	background-color: #4781c2;
+	background-image: url(http://placekitten.com/200/300);
+	height: 100vh ;
+	overflow: overflow;
+	position: relative;
+}
+
+.link {
+	border-bottom: 5px solid red;
+	padding-bottom: 1px;
+}

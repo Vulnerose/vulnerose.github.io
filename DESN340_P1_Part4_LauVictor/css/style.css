@@ -1,0 +1,160 @@
+/* Style page for my new hub page */
+
+/* 
+#CDEBEE
+
+
+*/
+
+/* Color Codes
+#9FC9DF Pastel Blue
+#E1B6E7 Pastel Pink
+#4781C2 Dark Blue
+ */
+
+/* Box Model Fix */
+
+html {
+  box-sizing: border-box;
+}
+
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* -------------------------------- */
+
+/* ClearFix */
+
+.clearfix:before
+.clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* -------------------------------- */
+
+div.fly {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+#smitty {
+  width: 50px;
+  height: 50px;
+}
+
+#kryoz {
+  width: 50px;
+  height: 50px;
+}
+
+body{
+  background-image: url(../images/Remy.webp);
+  background-color: #F5F1E0;
+}
+
+a{
+  color: #9FC9DF;
+  text-decoration: none ;
+}
+
+a:hover {
+  color: red;
+  transition: 1s;
+}
+
+h2 {
+    color: #326D95;
+}
+/* h1 {
+  color: #9FC9DF;
+
+} */
+
+span a .link{
+  color: #black;
+}
+
+body {margin:0;
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 ;
+  overflow: hidden;
+  background-color: #326D95;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #172F45;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: justify;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.projectcolumn {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  background-color: #CDEBEE;
+  border-style: inset;
+  border-width: 5px;
+  border-color: #C2CFEB;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    }
+
+
+
+
