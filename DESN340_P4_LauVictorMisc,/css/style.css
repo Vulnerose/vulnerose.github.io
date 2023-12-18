@@ -1,0 +1,248 @@
+/* Stylesheet for P4
+
+
+Colors: ;
+Background color #DFC7A7
+
+
+
+Typefaces being used:
+font-family: 'Inter', sans-serif;
+
+
+
+
+*/
+
+/* Add other notes for the redesign here */
+
+
+
+
+
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+
+html {
+	box-sizing: border-box;
+	background-color: #DFC7A7;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+img {
+	width: 100%;
+}
+
+/* Type Hierarchy 
+font-family: 'Inter', sans-serif;
+*/
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-style: ;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: ;
+}
+
+h1 {
+	font-family: 'Inter', sans-serif;
+	font-size: 64px;
+	margin: 1;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use this but I am going 
+	to use my Figma File as a refernce and they use absolute values
+	*/
+}
+
+h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: 36px;
+	margin: 0;
+}
+
+h3 {
+	ffont-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #;
+	font-family: 'Inter', sans-serif;
+}
+
+a:hover {
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* header styles and rules */
+
+header {
+	background-color: #1;
+	color: #;
+	position: fixed;
+	height: 90px;
+	z-index: 4;
+	font-size: 0.6em;
+}
+
+.icon {
+	fill:  whitesmoke;
+}
+
+/* 
+header li {
+	float: left;
+	margin-left: 18px;
+}
+*/
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 120px;
+	margin-top: 15px;
+}
+
+
+#search {
+	display: inline-block;
+	border-style: solid;
+	border-color: #;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	border-radius: 30px;
+	width: 310px;
+}
+
+
+/* homepage hero styles and rules */
+
+
+
+/* Splash graphic 
+Its the same as a container-fluid section 
+but it doesn't have any content*/ 
+
+/* Homepage product feature styles and rules */
+
+
+
+/*********************
+
+/* About Page styles and rules 
+
+*******************
+*/
+
+    footer {
+        background-color: #f8d7da;
+        color: #721c24; /* Change */
+        padding: 1rem;
+        text-align: center;
+    }
+
+     .hours-container, .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hours-container h3, .contact-container h3 {
+        margin-bottom: 10px;
+    }
+
+    .hours-container p, .contact-container p {
+        text-align: center;
+    }
+
+/* Create four equal columns that floats next to each other */
+.projectcolumn {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  background-color: #;
+  border-style: ;
+  border-width: 5px;
+  border-color: #;
+  
+}
+
+.footertext {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  background-color: #CDEBEE;
+  border-style: inset;
+  border-width: 5px;
+  border-color: #C2CFEB;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    }

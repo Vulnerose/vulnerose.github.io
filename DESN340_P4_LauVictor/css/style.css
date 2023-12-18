@@ -1,0 +1,260 @@
+/* Stylesheet for P4
+
+
+Colors: ;
+Background color #DFC7A7
+
+
+
+Typefaces being used:
+font-family: 'Inter', sans-serif;
+
+
+
+
+*/
+
+/* Add other notes for the redesign here */
+
+
+
+
+
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+
+html {
+	box-sizing: border-box;
+	background-color: #DFC7A7;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+
+}
+nav img{
+	width: 350px;
+	margin-top: -60px;
+}
+
+nav img.logo {
+	float: right;
+	max-width: 3.25rem;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+	margin-bottom: 50px;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+div #Ghostpop{
+	width: 262px;
+	height: 262px;
+	padding-left: 50px;	
+	position: absolute;
+	z-index: -1;
+	top: 200px;
+}
+.backgroundgrey {
+	margin: auto;
+	width: 1080px;
+	height: 1181px;
+	border-radius: 20px;
+	background: rgba(179, 175, 175, 0.60);
+}
+
+img #cafe {
+	position: absolute;
+	z-index: -1
+}
+
+img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.header {
+	width: 100%;
+	padding-bottom: 100px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.socials {
+	padding-right: 50px;
+	margin-bottom: 50px;
+
+}
+
+.jumbotron{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 574px;
+	padding: 30px 100px 100px 100px;
+	border-radius: 99px 99px 0px 0px;
+
+}	
+
+#jumbotron div h2 span {
+	position: absolute;
+	bottom: 0;
+}
+/* Type Hierarchy 
+font-family: 'Inter', sans-serif;
+*/
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+}
+
+.container img {
+	height: 252px;
+	width: 256px;
+}
+
+.container-brand{
+	margin-top: 20px;
+	border-radius: 95px;
+	background-color: rgba(0, 0, 0, 0.42);
+	padding: 20px;
+	width: 804px;
+	height: 291px;
+}
+.float-container {
+
+	margin-top: 10px;
+	padding: 40px;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.float-container img{
+	border-radius: 20px 20px 20px 20px;
+}
+
+.float-child {
+	width: 50%;
+	height: 582px;
+	float: left;
+	padding: 20px;
+	border: 2px;
+	margin-bottom: 100px;
+}
+
+
+.footer-child {
+	width: 50%;
+	float: left;
+	padding: 20px;
+	border: 2px;
+	margin-bottom: 0px;
+
+}
+
+.top-left{
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	font-family: 'Inter', sans-serif;
+	font-style: bold;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0;
+	background-color: #DFC7A7;
+	color: #fff;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: relative;
+	bottom: 0;
+}
+
+div #bodyhome{
+	width: 100%;
+	height: 100%;
+	max-height: 1920px;
+	position: absolute;
+	z-index: -1;
+}
+
+#cities {
+	border-radius: 20px;
+	background: rgba(217, 217, 217, 0.60);
+}
+
+#cities p{
+	padding-left: 60px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	color: #FFB347;
+	font-style: regular;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #DFC7A7 ;
+	position: relative;
+	z-index: 0;
+}
+
+h2 {
+	font-family: Inter, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	word-wrap: break-word;
+	color: #FFB347;}
+
+
+
+p {font-family: Inter, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	word-wrap: break-word;
+	color: #FFB347;
+}
+
+/* header styles and rules */
+
+
+
